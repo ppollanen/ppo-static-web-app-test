@@ -1,9 +1,11 @@
-const HelloVueApp = {
-    data() {
-        return {
-            message: 'Hello Vue!!'
-        }
-    }
-}
+import Vue from 'vue'
+  import App from './App'
+  import router from './router'
+  Vue.config.productionTip = false
 
-HelloVueApp.createApp(HelloVueApp).mount('#hello-vue')
+    new Vue ({
+        el: "#app",
+        data: {
+          message: "This is my First Code of Vue.js",
+        }
+    });
